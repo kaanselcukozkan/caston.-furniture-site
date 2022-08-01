@@ -1,0 +1,1736 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.product-promotion {
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(./img/background-image-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+nav {
+    max-width: 100%;
+    height: 11vh;
+    margin: 0 90px 0 90px;
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+        
+}
+
+.nav.sticky {
+    background-color: #fff;
+}
+
+
+.left-bars {
+    width: 40%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+
+ .list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+
+ .list-element {
+    margin-right: 20px;
+letter-spacing: 2px;    
+}
+
+
+.link-shape {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration-line: none;
+    display: inline-block;
+    position: relative;
+}
+
+.link-shape::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.25s ease-in-out;
+}
+
+.link-shape:hover::before {
+    width: 100%;
+}
+
+
+.hamburger-menu {
+    display: none;
+}
+
+.company-name {
+    width: 20%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-name  h1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px ;
+}
+
+
+
+
+.right-bars {
+    width: 40%;
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.search-button {
+width: 7%;
+height: inherit;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+ .glass {
+    color: #fff;
+    font-size: 14px!important;
+    background-color: red;
+    padding:10px;
+    border-radius: 50%;
+   
+}
+
+.login-button {
+width: 20%;
+height: inherit;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.user {
+    border-style: solid!important;
+     border: 1px;
+     background-color: transparent;
+    border-color: #fff;
+    border-radius: 500px;
+    padding: 8px 16px;
+    color: white;
+}
+
+.jj {
+    margin-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.shopping-button {
+
+width: 7%;
+height: inherit;
+display: flex;
+align-items: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.briefcase {
+    color: #fff;
+}
+
+
+
+.product-catalog {
+    max-width: 100%;
+    margin-left: 15%;
+    margin-right: 15% ;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-catalog  h1 {
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 4px;
+    animation: anan 0.6s ease-in;
+}
+
+@keyframes anan {
+    0% {
+        margin-right:2000px;
+    }
+    100% {
+        margin-right : 0;
+    }
+}
+
+.product-catalog  h2 {
+    font-size: 110px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    letter-spacing: 4px;
+    font-weight: 100;
+    margin: 0;
+    animation: anan 0.6s ease-in;
+
+}
+
+.shopnow-button {
+    padding:16px 50px;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    border-style: solid!important;
+    border: 1px;
+    font-weight: bold;
+    border-color: black;
+    font-family: 'Poppins', sans-serif;
+    animation: anan 0.4s ease-in;
+    transition: 0.6s linear;
+} 
+
+.shopnow-button:hover {
+    background-color: transparent;
+    color: white;
+
+}
+
+.product-type {
+    height: 70vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.catalog-box-1 {
+    width: 27%;
+    height: 50vh;
+    background-image: url(./img/catalog-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    transition: all 0.4s ease-in-out;
+    cursor:pointer;
+}
+
+.catalog-box-1:hover {
+    transform: scale(1.1);
+}
+
+
+.catalog-box-2 {
+    width: 27%;
+    height: 50vh;
+    background-image: url(./img/catalog-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    transition: all 0.4s ease-in-out;
+    cursor:pointer;
+}
+
+.catalog-box-2:hover {
+    transform: scale(1.1);
+}
+
+.catalog-box-3 {
+    width: 27%;
+    height: 50vh;
+    background-image: url(./img/catalog-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    transition: all 0.4s ease-in-out;
+    cursor:pointer;
+}
+
+.catalog-box-3:hover {
+    transform: scale(1.1);
+}
+
+.catalog-name {
+width: 40%;
+height: 10vh;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+
+}
+
+.catalog-name > span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.purchase {
+    color: black;
+    font-size: 14px;
+    font-weight: bolder;
+    transition: 0.3s linear;
+}
+
+.purchase:hover {
+    color:red;
+}
+
+.new-arrivals {
+    max-width: 100%;
+    height: 100vh;
+    background-color: #f6f6f6;
+    padding: 85px 15px 15px 15px;
+ 
+}
+
+
+.new-arrivals > h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 62px;
+}
+
+
+.new-arrivals > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.new-arrival-product {
+    width: 20%;
+    height: 40vh;
+    margin: 0 15px 0 15px;
+    margin-bottom: 35px;
+}
+
+
+	
+.na-product-photo  {
+    width: 100% ;
+     height: 30vh;
+     transition: all 0.4s ease-in-out;
+     cursor:pointer;
+    
+ }
+
+
+
+
+
+.na-product-photo:hover {
+    transform: scale(1.1);
+} 
+
+ 
+.na-product-info {
+    height: 10vh;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.star {
+    color: gold;
+    font-size: 12px!important;
+}
+
+.empty-star {
+    color: #979797;
+    font-size: 12px!important;
+    
+}
+
+
+
+.product-name > h1 {
+    font-size: 14px;
+    color: black;
+cursor:pointer;
+transition: 0.4s linear;
+}
+
+.product-name >h1:hover {
+    color: red;
+}
+
+
+.price {
+    color: #979797;
+    font-size:14px; 
+    font-weight: bold;
+}
+
+
+.discounted-price {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+
+.price-without-discount {
+    text-decoration: line-through;
+    margin-left:5px;
+    color: #979797;
+    font-size: 14px;
+}
+
+
+.collections {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.spring-collection {
+    width: 50%;
+    height: inherit;
+    background-image: url(./img/spring-collection.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  
+}
+
+
+.light-collection {
+    width: 50%;
+    height: inherit;
+    background-image: url(./img/light-collection.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.collection-catalog {
+    width: 40%;
+    height: 30vh;
+    margin-left: 122px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.collection-catalog-2 {
+    width: 40%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+
+.collection-catalog > h1 {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+
+.pp {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    float: left!important;
+}
+
+
+.button {
+    padding: 20px 50px;
+    margin-top: 50px;
+ cursor: pointer;
+ font-family: 'Roboto', sans-serif;
+letter-spacing: 3px;
+font-size: 14px;
+ transition: 0.4s linear;
+ font-weight: bolder;
+}
+
+.button:hover {
+    color: red;
+}
+.cc {
+    width: 25%;
+    color: #fff;
+   margin: 0;
+}
+
+.collections {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.spring-collection {
+    width: 50%;
+    height: inherit;
+    background-image: url(./img/spring-collection.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-position: center;
+
+}
+
+
+.light-collection {
+    width: 50%;
+    height: inherit;
+    background-image: url(./img/light-collection.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-position: center;
+
+}
+
+
+.collection-catalog {
+    width: 40%;
+    height: 30vh;
+    margin-left: 122px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.collection-catalog-2 {
+    width: 40%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.collection-catalog  h1 {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+
+.pp {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    float: left!important;
+}
+
+
+.button {
+    padding: 20px 50px;
+    margin-top: 50px;
+ cursor: pointer;
+ font-family: 'Roboto', sans-serif;
+letter-spacing: 3px;
+font-size: 14px;
+ transition: 0.4s linear;
+ font-weight: bolder;
+}
+
+.button:hover {
+    color: red;
+}
+.cc {
+    width: 25%;
+    color: #fff;
+   margin: 0;
+}
+
+
+
+.big-background-collection {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./img/big-background-collection.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.big-background-info {
+    max-width: 100%;
+    margin-left: 15%;
+    margin-right: 15% ;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+.big-background-info h1 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.big-background-info h2 {
+    font-size: 90px;
+    font-weight: 100;
+    margin: 30px 0 30px 0;
+    text-align: center;
+
+}
+
+footer {
+    width: 100%;
+    height: 60vh;
+}
+
+.subscribe {
+    width: inherit;
+    height: 40vh;
+}
+
+.subscribe-content {
+    max-width: inherit;
+    height: inherit;
+    margin:0 100px 0 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.letter {
+height: 10vh;
+text-align: center;
+}
+
+
+.led {
+    background-color: red;
+    color: white;
+    padding: 45px;
+    border-radius: 50%;
+    margin: -73px 0px 23px 0 ;
+    font-size: 40px!important;
+}
+
+.sub-first-order {
+    height: 40vh;
+}
+
+.sub-promotion {
+    height: 10vh;
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 35px;
+    font-weight: bold   ;
+}
+
+.sub-promotion p {
+    margin: 0;
+}
+
+.email {
+    text-align: center;
+}
+
+input[type=email] {
+    font-size: 13px;
+    font-family: "Poppins",Sans-serif;  
+    font-weight: bolder; 
+    width: 30%;
+    border:none;
+    border-bottom: 2px solid;
+    transition: 0.2s linear;
+}
+
+
+input[type=email]:hover {
+    color: red;
+}
+
+
+input[type=submit] {
+    width: 8%;
+    border: none;
+    border-bottom: 2px solid;
+    background-color: transparent;
+    color: black;
+    font-size: 14px;
+    font-family: "Poppins",Sans-serif;  
+    font-weight: bolder;
+   cursor: pointer;
+   transition: 0.2s linear;
+
+}
+ 
+input[type=submit]:hover {
+    border-color: red;
+}
+
+
+.caston-copy-cont {
+    height: 20vh;
+    border-top: 1px solid #efefef;
+}
+
+
+.caston {
+    max-width: inherit;
+    height: inherit;
+    margin:0 100px 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.name-of-company {
+width: 50%;
+height: 10vh;
+display: flex;
+justify-content: flex-start;
+flex-direction: column-reverse;
+}
+
+.name-of-company h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.company-copyright {
+    width: 50%;
+    height: 10vh;
+     display: flex;
+    justify-content: flex-start;
+
+}
+
+.company-copyright h1 {
+    font-size: 12px;
+    color: #868686;
+    margin: 0;
+}
+
+
+.company-contact {
+    width: 50%;
+    height: 10vh;
+   display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+}
+
+.tag {
+    text-decoration-line: none;
+    color: #a1a1a1;
+    font-size: 12px;
+    font-weight: bolder;
+cursor: pointer;
+transition: 0.2s linear;
+margin-right: 20px;
+letter-spacing: 2px;
+
+}
+
+.tag:hover {
+    color: red;
+}
+
+.tag-dif {
+  text-decoration-line: none;
+ color: #a1a1a1;
+    font-size: 12px;
+    font-weight: bolder;
+cursor: pointer;
+transition: 0.2s linear;
+letter-spacing: 2px;
+}
+
+.tag-dif:hover {
+    color: red;
+}
+
+
+.company-socmedia {
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.design {
+    font-size: 16px!important;
+    color: white;
+    padding: 8px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s linear;
+    margin-right: 10px;
+
+    }
+
+.design:hover {
+    background-color: red;
+}
+
+    .designs {
+      font-size: 16px!important;
+        color: white;
+        padding: 8px;
+        background-color: black;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.2s linear;
+      
+        }
+
+
+        .designs:hover {
+            background-color: red;
+        }
+
+
+        @media only screen and (min-width:0px)  and (max-width: 300px) {
+            .product-promotion {
+                height: 50vh;
+               background-size: cover;
+                
+            }
+            
+            nav {
+                margin: 0;
+                padding: 0 15px 0 15px;
+                border-bottom: 1px solid #868686;
+                height: 9vh;
+            }
+            
+        
+        
+            .hamburger-menu {
+                display: block;
+                color: #ffffff;
+            }
+            
+        
+            .list-element {
+               display: none;    
+            }
+            
+        
+           
+            .company-name  h1 {
+               
+                font-size: 24px;
+                
+            }
+        
+                   .login-button {
+                display: none;
+               }
+        
+        
+               
+            .search-button {
+             margin-right: 20px;
+            }
+        
+            .glass {
+                font-size: 18px!important;
+                background-color: transparent;
+            }
+        
+            .product-catalog {
+               
+                height: 41vh;
+               
+            }
+        
+        
+            .product-catalog h1 {
+                font-size: 10px;
+            }
+        
+        
+            .product-catalog  h2 {
+                font-size: 33px;
+                
+            
+            }
+            
+        
+            .shopnow-button {
+                margin-top: 20px;
+                padding: 10px 30px;
+                font-size: 14px;
+               } 
+           
+        
+               .shopping-button {
+        
+                margin-right: 5px;
+                }
+                
+                .product-type {
+                    height: 150vh;
+                    flex-direction: column;
+                   justify-content: center;
+                   padding-left: 15px;
+                   padding-right: 15px;
+                }
+            
+               .catalog-box-1 {
+                width:100%;
+                height: 50vh;
+                margin-top: 15px;
+                margin-bottom: 15px;
+               }
+        
+                .catalog-box-2 {
+                    width:100%;
+                   height: 50vh;
+                   margin-top: 15px;
+                margin-bottom: 15px;
+                }
+        
+               .catalog-box-3 {
+                width:100%;
+                 height: 50vh;
+                 margin-top: 15px;
+                 margin-bottom: 30px;
+               }
+        
+                .new-arrivals {
+                    height: 160vh;
+                    padding: 30px 10px 10px 10px;
+        
+                }
+        
+                .new-arrivals h1 {
+                     font-size: 30px;
+                     margin-bottom: 12px;
+                }
+        
+                .new-arrivals ul {
+                    margin : 0 ;
+                    padding : 0px 0 10px 0;
+                    
+                }
+        
+                .new-arrival-product {
+                    width: 38%;
+                    height: 30vh;
+                    margin: 0 15px 50px 15px;
+                  
+                }
+                
+                .na-product-photo {
+                    width: 100% ;
+                     height: 20vh;
+                     transition: all 0.4s ease-in-out;
+                     cursor:pointer;
+                    
+                 }
+                
+                 .na-product-info {
+                    height: 15vh;
+                 }
+        
+                  .product-name h1 {
+                    font-size: 14px;
+                  }
+        
+        
+        
+                  .collections {
+                  flex-direction: column;   
+                   height: 110vh;
+                   
+                }
+        
+                .spring-collection {
+                    width: 100%;
+                   height: 55vh;
+                    
+                }
+                
+                
+                .light-collection {
+                    width: 100%;
+                    height: 55vh;
+                }
+        
+        
+                .collection-catalog  h1 {
+                    font-size: 28px;
+                   
+                }
+                
+                
+                .pp {
+                    font-size: 31px;
+                   
+                }
+                
+                .collection-catalog {
+                    margin-left: 30px;
+                     
+                }
+            
+                .button {
+                    padding: 10px 25px;
+                    margin-top: 20px;
+                  
+                }
+                
+        
+        
+                .big-background-collection {
+                  
+                    height: 70vh;
+                    
+                }
+        
+                .big-background-info h1 {
+                    font-size: 20px;
+                    
+                }
+                
+                .big-background-info h2 {
+                    font-size: 54px;
+               
+                }
+                
+                .subscribe-content {
+                    margin:0;    
+                }
+        
+                .led {
+                    padding: 30px;      
+                    font-size: 30px!important;
+                }
+                
+                .sub-promotion {
+                    font-size: 20px; 
+                }
+        
+                input[type=email] {
+            
+                    width: 60%;
+                  
+                }
+                
+                input[type=submit] {
+                    width: 30%;
+                   
+                }
+       
+
+                
+        .caston {
+            margin: 0;
+        }
+
+
+        .company-contact {
+
+            align-items: center;
+           }
+   
+   
+           .company-socmedia {
+               
+               justify-content: flex-end;
+               align-items:baseline;
+           }
+   
+   
+           .name-of-company {
+               
+               justify-content: center;
+               align-items: flex-start;
+               }
+
+               .tag {
+                font-size: 6px;
+                margin-right:5px ;
+             
+             }
+             
+             .tag-dif {
+               font-size: 6px;
+               }
+     
+               .company-copyright h1 {
+                font-size: 8px;
+                
+            }
+            
+            .design {  
+                margin-right: 5px;
+                }
+            
+           
+
+
+        }
+
+
+
+
+
+
+
+@media only screen and (min-width:301px)  and (max-width: 640px) {
+
+    .product-promotion {
+        height: 50vh;
+       background-size: cover;
+        
+    }
+    
+    nav {
+        margin: 0;
+        padding: 0 15px 0 15px;
+        border-bottom: 1px solid #868686;
+        height: 9vh;
+    }
+    
+
+
+    .hamburger-menu {
+        display: block;
+        color: #ffffff;
+    }
+    
+
+    .list-element {
+       display: none;    
+    }
+    
+
+   
+    .company-name  h1 {
+       
+        font-size: 24px;
+        
+    }
+
+           .login-button {
+        display: none;
+       }
+
+
+       
+    .search-button {
+     margin-right: 20px;
+    }
+
+    .glass {
+        font-size: 18px!important;
+        background-color: transparent;
+    }
+
+    .product-catalog {
+       
+        height: 41vh;
+       
+    }
+
+
+    .product-catalog h1 {
+        font-size: 10px;
+    }
+
+
+    .product-catalog  h2 {
+        font-size: 33px;
+        
+    
+    }
+    
+
+    .shopnow-button {
+        margin-top: 20px;
+        padding: 10px 30px;
+        font-size: 14px;
+       } 
+   
+
+       .shopping-button {
+
+        margin-right: 5px;
+        }
+        
+        .product-type {
+            height: 150vh;
+            flex-direction: column;
+           justify-content: center;
+           padding-left: 15px;
+           padding-right: 15px;
+        }
+    
+       .catalog-box-1 {
+        width:100%;
+        height: 50vh;
+        margin-top: 15px;
+        margin-bottom: 15px;
+       }
+
+        .catalog-box-2 {
+            width:100%;
+           height: 50vh;
+           margin-top: 15px;
+        margin-bottom: 15px;
+        }
+
+       .catalog-box-3 {
+        width:100%;
+         height: 50vh;
+         margin-top: 15px;
+         margin-bottom: 30px;
+       }
+
+        .new-arrivals {
+            height: 160vh;
+            padding: 30px 10px 10px 10px;
+
+        }
+
+        .new-arrivals h1 {
+             font-size: 30px;
+             margin-bottom: 12px;
+        }
+
+        .new-arrivals ul {
+            margin : 0 ;
+            padding : 0px 0 10px 0;
+            
+        }
+
+        .new-arrival-product {
+            width: 40%;
+            height: 30vh;
+            margin: 0 15px 50px 15px;
+          
+        }
+        
+        .na-product-photo {
+            width: 100% ;
+             height: 20vh;
+             transition: all 0.4s ease-in-out;
+             cursor:pointer;
+            
+         }
+        
+         .na-product-info {
+            height: 15vh;
+         }
+
+          .product-name h1 {
+            font-size: 14px;
+          }
+
+
+
+          .collections {
+          flex-direction: column;   
+           height: 110vh;
+           
+        }
+
+        .spring-collection {
+            width: 100%;
+           height: 55vh;
+            
+        }
+        
+        
+        .light-collection {
+            width: 100%;
+            height: 55vh;
+        }
+
+
+        .collection-catalog  h1 {
+            font-size: 28px;
+           
+        }
+        
+        
+        .pp {
+            font-size: 31px;
+           
+        }
+        
+        .collection-catalog {
+            margin-left: 30px;
+             
+        }
+    
+        .button {
+            padding: 10px 25px;
+            margin-top: 20px;
+          
+        }
+        
+
+
+        .big-background-collection {
+          
+            height: 70vh;
+            
+        }
+
+        .big-background-info h1 {
+            font-size: 20px;
+            
+        }
+        
+        .big-background-info h2 {
+            font-size: 54px;
+       
+        }
+        
+        .subscribe-content {
+            margin:0;    
+        }
+
+        .led {
+            padding: 30px;      
+            font-size: 30px!important;
+        }
+        
+        .sub-promotion {
+            font-size: 20px; 
+        }
+
+        input[type=email] {
+    
+            width: 60%;
+          
+        }
+        
+        input[type=submit] {
+            width: 30%;
+           
+        }
+ 
+        .caston {
+            margin: 0 10px 0 10px;
+        }
+
+
+        
+        
+        .tag {
+           font-size: 10px;
+           margin-right:5px ;
+        
+        }
+        
+        .tag-dif {
+          font-size: 10px;
+          }
+
+
+          .company-contact {
+
+         align-items: center;
+        }
+
+
+        .company-socmedia {
+            
+            justify-content: flex-end;
+            align-items:baseline;
+        }
+
+
+        .name-of-company {
+            
+            justify-content: center;
+            align-items: flex-start;
+            }
+
+
+    }
+    
+    @media only screen and (min-width: 641px) and (max-width: 1007px) {
+      
+    .product-promotion {
+        height: 50vh;
+       background-size: cover;  
+    }
+
+    nav {
+        margin: 0;
+        border-bottom: 1px solid #868686;
+        height: 6vh;
+    }
+
+    .hamburger-menu {
+        display: block;
+        color: #ffffff;
+    }
+    
+    .list-element {
+       display: none;    
+    }
+    
+    .company-name  h1 {  
+        font-size: 24px;
+    }
+
+   .login-button {
+    display: none;
+    }  
+   
+    .search-button {
+     margin-right: 20px;
+    }
+    .glass {
+        font-size: 12px!important;
+    }
+   
+    .product-catalog {
+        height: 44vh;  
+    }
+   
+    .product-catalog  h2 {
+        font-size: 70px;
+    }
+
+    .shopnow-button {
+     margin-top: 20px;
+    } 
+
+    .product-type {
+        height: 50vh;
+    }
+
+    .catalog-box-3 {
+        display: none;
+    }
+
+    .catalog-box-1 {
+     width: 40%;
+     height: 33vh;
+    
+     
+    }
+
+    .catalog-box-2 {
+      width: 40%;
+      height: 33vh;
+    }
+ 
+    .new-arrivals {
+        height: 110vh;
+        padding: 30px 10px 10px 10px;
+
+    }
+
+    .new-arrivals h1 {
+         font-size: 40px;
+         margin-bottom: 12px;
+    }
+
+    .new-arrivals ul {
+        margin : 0 ;
+        padding : 47px 0 10px 0;
+    }
+
+    .new-arrival-product {
+        width: 29%;
+        height: 30vh;
+        margin: 0 15px 10px 15px;
+      
+    }
+    
+    .na-product-photo {
+        width: 100% ;
+         height: 20vh;
+         transition: all 0.4s ease-in-out;
+         cursor:pointer;
+        
+     }
+    
+     .na-product-info {
+        height: 10vh;
+     }
+
+      .product-name h1 {
+        font-size: 14px;
+      }
+
+
+      .collections {
+       
+        height: 35vh;
+       
+    }
+
+    .collection-catalog  h1 {
+        font-size: 28px;
+       
+    }
+    
+    
+    .pp {
+        font-size: 31px;
+       
+    }
+    
+    .collection-catalog {
+        margin-left: 30px;
+         
+    }
+
+    .button {
+        padding: 15px 30px;
+      
+    }
+    
+
+    .big-background-collection {
+          
+        height: 50vh;
+        
+    }
+
+    .big-background-info h1 {
+        font-size: 20px;
+        
+    }
+    
+    .big-background-info h2 {
+        font-size: 63px;
+   
+    }
+    
+    input[type=email] {
+    
+        width: 50%;
+      
+    }
+    
+    input[type=submit] {
+        width: 20%;
+       
+      
+    }
+     
+
+    footer {
+      
+        height: 50vh;
+    }
+
+
+    .subscribe {
+    
+        height: 30vh;
+
+    }
+
+
+
+    .caston {
+        margin: 0 30px 0 30px   ;
+    }
+
+
+    .company-contact {
+
+        align-items: center;
+       }
+
+
+       .company-socmedia {
+           
+           justify-content: flex-end;
+           align-items:baseline;
+       }
+
+
+       .name-of-company {
+           
+           justify-content: center;
+           align-items: flex-start;
+           }
+
+  
+    }
+    
+    @media only screen and (min-width: 1008px) and (max-width:1600px) {
+        .product-promotion {
+            height: 90vh;
+           background-size: cover;
+            
+          
+        }
+      
+        nav {
+            margin: 0;
+            border-bottom: 1px solid #868686;
+        }
+
+       .login-button {
+        display: none;
+       }
+
+
+       
+    .search-button {
+     margin-right: 10px;
+    }
+   
+    .company-name  h1 {
+        font-size: 24px;
+    }
+
+    .product-catalog {
+        height: 79vh;
+    }
+    
+    .product-catalog  h2 {
+        font-size: 90px;
+        
+    }
+   
+    .new-arrivals {
+        height: 125vh;
+        padding: 30px 10px 10px 10px;
+
+    }
+
+    .new-arrivals ul {
+        margin : 0 ;
+        padding : 47px 0 10px 0;
+    }
+
+    .collection-catalog  h1 {
+        font-size: 28px;
+       
+    }
+    
+    
+    .pp {
+        font-size: 31px;
+       
+    }
+    
+    .collection-catalog {
+        margin-left: 30px;
+        height: 42vh;
+         
+    }
+
+    .button {
+        padding: 15px 35px;
+      
+    }
+    
+    .big-background-collection {
+          
+        height: 80vh;
+        
+    }
+
+    .big-background-info h1 {
+        font-size: 20px;
+        
+    }
+    
+    .big-background-info h2 {
+        font-size: 63px;
+   
+    }
+
+    .sub-promotion {
+        margin-top: 20px;
+    }
+
+
+    input[type=email] {
+    
+        width: 50%;
+      
+    }
+    
+    input[type=submit] {
+        width: 20%;
+       
+      
+    }
+
+    .caston {
+        margin: 0 30px 0 30px;
+    }
+
+  
+
+
+
+    }
